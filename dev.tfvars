@@ -1,4 +1,4 @@
-ev_aws_region          = #region
+dev_aws_region          = #region
 dev_vpc_cidr            = #vpc cidr 
 dev_public_subnets      = #cidr for public subnets
 dev_private_subnets     = #cidr for private subnets
