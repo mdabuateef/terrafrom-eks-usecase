@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-dev
+  labels:
+    app: nginx-dev
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx-dev
+  template:
+    metadata:
+      labels:
+        app: nginx-dev
+    spec:
+      containers:
+      - name: nginx
+        image: your-dockerhub-username/nginx-dev-env:latest
+        ports:
+        - containerPort: 80
