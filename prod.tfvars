@@ -1,13 +1,14 @@
-dev_aws_region          = "ap-south-1"
-dev_vpc_cidr            = "10.0.0.0/16"
-dev_public_subnets      = ["10.0.1.0/24", "10.0.2.0/24"]
-dev_private_subnets     = ["10.0.3.0/24","10.0.4.0/24"]
-dev_env                 = "dev"
-dev_desired_size        = 2
-dev_max_size            = 3
-dev_min_size            = 1
-dev_instance_types      = ["t2.medium"]
-dev_ec2_ssh_key         = "test"
-dev_tags                = {
-    Environment = "dev"
-    Project     =#your project name
+prod_aws_region          = #region
+prod_vpc_cidr            = #vpc cidr 
+prod_public_subnets      = #cidr for public subnets
+prod_private_subnets     = #cidr for private subnets
+prod_env                 = #name of the env
+prod_desired_size        = #desired size
+prod_max_size            = #max size
+prod_min_size            = #min size
+prod_instance_types      = #instance type
+prod_ec2_ssh_key         = #your key pair
+prod_tags                = {
+    Environment = #your env name
+    Project     = #your project name 
+}
