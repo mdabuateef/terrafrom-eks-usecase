@@ -1,0 +1,13 @@
+dev_aws_region          = "ap-south-1"
+dev_vpc_cidr            = "10.0.0.0/16"
+dev_public_subnets      = ["10.0.1.0/24", "10.0.2.0/24"]
+dev_private_subnets     = ["10.0.3.0/24","10.0.4.0/24"]
+dev_env                 = "dev"
+dev_desired_size        = 2
+dev_max_size            = 3
+dev_min_size            = 1
+dev_instance_types      = ["t2.medium"]
+dev_ec2_ssh_key         = "test"
+dev_tags                = {
+    Environment = "dev"
+    Project     =#your project name
