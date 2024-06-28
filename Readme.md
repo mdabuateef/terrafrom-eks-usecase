@@ -1,5 +1,14 @@
 Automate K8 EKS cluster setup using terraform
-create a 
+create directory structure 
+├── environments
+│   ├── dev
+│   ├── staging
+│   └── prod
+├── modules
+│   ├── vpc
+│   ├── eks
+│   └── iam
+└── scripts
 
 dev env
 terraform -chdir=C:\abuateef\azure\terraform\Dev apply -var-file="c:/abuateef/azure/terraform/var/dev.tfvars"
